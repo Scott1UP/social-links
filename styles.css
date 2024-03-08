@@ -36,7 +36,8 @@ body {
     padding: 1.5rem;
     background-color: var(--dk-grey);
     border-radius: .75rem;
-    min-width: 18rem;
+    width: 70vw;
+    max-width: 18rem;
 }
 
 .profile {
@@ -78,18 +79,33 @@ body {
 .social-link {
     border: none;
     outline: none;
-    cursor: pointer;
-    border-radius: .5rem;
+    background: none;
+    width: 100%;
 
     font-family: 'Inter';
     font-weight: 700;
+    text-align: center;
     color: var(--white);
     background-color: var(--grey);
-    padding: .75rem 1rem;
+    padding: 1rem 1rem;
+
     transition: 200ms ease-in-out;
+    cursor: pointer;
+    border-radius: .5rem;
 }
 
 .social-link:hover {
     background-color: var(--pri-brand);
     color: var(--off-blk);
 }
+
+/* Desktop styles */
+@media screen and (min-width: 920px) {
+    .card {
+        padding: 2.5rem;
+        background-color: var(--dk-grey);
+        border-radius: .75rem;
+        min-width: 20rem;
+    }
+}
+
